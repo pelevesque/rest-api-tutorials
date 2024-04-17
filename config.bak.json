@@ -1,0 +1,10 @@
+{
+  "mongo": {
+    "username": "username",
+    "password": "passowrd"
+  },
+  "auth": {
+    "secret": "mySecret",
+    "cookiename": "myCookie"
+  }
+}

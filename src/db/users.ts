@@ -5,7 +5,7 @@ const UserSchema = new mongoose.Schema({
   email: { type: String, required: true },
   authentication: {
     password: { type: String, required: true, select: false },
-    salt: { type: String, select: false },
+    salt: { type: String, required: true, select: false },
     sessionToken: { type: String, select: false },
   }
 })
@@ -13,8 +13,8 @@ const UserSchema = new mongoose.Schema({
 export const UserModel = mongoose.model('User', UserSchema)
 
 export const getUsers = () => UserModel.find()
-export const getUserByEmail = (email: String) => UserModel.findOne({ email })
-export const getUserbySesssionToken = (sessionToken: string) => UserModel.findOne({
+export const getUserByEmail = (email: string) => UserModel.findOne({ email })
+export const getUserBySessionToken = (sessionToken: string) => UserModel.findOne({
   'authentication.sessionToken': sessionToken,
 })
 export const getUserById = (id: string) => UserModel.findById(id)
