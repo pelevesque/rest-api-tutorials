@@ -1,6 +1,6 @@
 # NodeJS Express TypeScript Session REST API
 
-A REST API using NodeJS with Express, TypeScript and sessions.
+A REST API using NodeJS with Express, TypeScript, and sessions.
 
 From: https://www.youtube.com/watch?v=b8ZUb_Okxro
 
