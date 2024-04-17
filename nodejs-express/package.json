@@ -1,5 +1,5 @@
 {
-  "name": "nodejs-express-rest-api",
+  "name": "nodejs-express",
   "version": "0.1.0",
   "description": "A very simple REST API with NodeJS and Express",
   "main": "index.js",
