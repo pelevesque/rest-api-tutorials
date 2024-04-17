@@ -1,7 +1,7 @@
 {
   "name": "nodejs-express-typescript-session",
   "version": "0.1.0",
-  "description": "",
+  "description": "A REST API using NodeJS with Express, TypeScript, and sessions.",
   "main": "index.js",
   "scripts": {
     "start": "nodemon",
